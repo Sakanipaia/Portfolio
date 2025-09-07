@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url('Demo_12.jpg');
+    background-color: rgb(2, 24, 54);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgba(141, 164, 241, 0.8);
+    background-color: rgba(5, 33, 67, 0.8);
     color: rgb(42, 20, 237);
     padding: 10px;
     text-align: center;
@@ -23,7 +23,8 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    background-color: rgba(141, 164, 241, 0.8);
+    /* background-color: rgba(141, 164, 241, 0.8); */
+    background-color: rgba(5, 33, 67, 0.8);
     z-index: 1000;
 }
 .menu ul {
@@ -53,7 +54,8 @@ header {
 
 /* Sections */
 section {
-    background-color: rgba(141, 164, 241, 0.8);
+    /* background-color: rgba(141, 164, 241, 0.8); */
+    background-color: rgba(5, 33, 67, 0.8);
     border-radius: 10px;
     margin-top: 3%;
 }
@@ -94,16 +96,17 @@ section {
 .par {
     font-size: 25px;
     font-weight: 900;
-    color: rgb(6, 29, 77);
+    color: rgb(192, 192, 197);
 }
 span {
-    color: rgb(2, 24, 54);
+    color: rgb(99, 99, 252);
     font-size: 30px;
 }
 ul li {
     font-size: 25px;
     font-weight: 900;
-    color: rgb(6, 29, 77);
+    /* color: rgb(6, 29, 77); */
+    color: rgb(192, 192, 197);
     margin-bottom: 10px;
 }
 
@@ -119,7 +122,8 @@ ul li {
     text-decoration: none;
 }
 .icons ion-icon {
-    color: rgb(42, 20, 237);
+    /* color: rgb(42, 20, 237); */
+    color: rgb(192, 192, 197);
     font-size: 50px;
     transition: 0.3s ease;
 }
@@ -129,7 +133,8 @@ ul li {
 
 /* Footer */
 footer {
-    background-color: rgba(141, 164, 241, 0.8);
+    /* background-color: rgba(141, 164, 241, 0.8); */
+    background-color: rgba(5, 33, 67, 0.8);
     color: rgb(212, 211, 224);
     padding: 10px;
     text-align: center;
