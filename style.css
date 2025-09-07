@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('Demo_12.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: cursive;
+}
+
+/* Header */
+header {
+    background-color: rgba(141, 164, 241, 0.8);
+    color: rgb(42, 20, 237);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgba(141, 164, 241, 0.8);
+    z-index: 1000;
+}
+.menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: large;
+}
+.menu ul li a {
+    color: rgb(12, 12, 230);
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+.menu ul li a.active,
+.menu ul li a:hover {
+    color: rgb(10, 223, 223);
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: rgba(141, 164, 241, 0.8);
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.content-section {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    scroll-margin: 90px;
+}
+.content-section:target {
+    display: block;
+    opacity: 1;
+}
+
+/* Home Section */
+.home-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding-left: 40px;
+}
+.home-container img {
+    width: 250%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+.home-container p {
+    text-align: left; 
+    flex: 1; 
+    font-size: 22px;
+    max-width: 600px;
+}
+
+/* Text */
+.par {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(6, 29, 77);
+}
+span {
+    color: rgb(2, 24, 54);
+    font-size: 30px;
+}
+ul li {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(6, 29, 77);
+    margin-bottom: 10px;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.icons a {
+    text-decoration: none;
+}
+.icons ion-icon {
+    color: rgb(42, 20, 237);
+    font-size: 50px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover {
+    color: rgb(10, 223, 223);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(141, 164, 241, 0.8);
+    color: rgb(212, 211, 224);
+    padding: 10px;
+    text-align: center;
+}
+.footer-text {
+    font-size: 1em;
+}
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Default visible section */
+#home {
+    display: block;
+}
