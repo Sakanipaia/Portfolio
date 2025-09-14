@@ -1,121 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakani's Portfolio</title>
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Ionicons -->
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakani's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Hello!! Welcome to my Website</h1>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Sakani</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navigation -->
-    <section>
-        <div class="navbar">
-            <div class="menu">
-                <ul>
-                    <li><a href="#home" class="active">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#social">SOCIAL</a></li>
-                </ul>
-            </div>
+  <!-- Home -->
+  <section id="home" class="section home">
+    <div class="home-container">
+      <img src="Demo_11.jpg" alt="Profile Picture">
+      <div class="intro">
+        <h1>Hi, I'm <span>Sakanipaia Lyngdoh </span>from Jowai, Meghalaya.</h1>
+        <h3><b>Explore my work and journey below.</b></h3>
+
+        <!-- Resume Button here -->
+        <!-- <a href="https://docs.google.com/document/d/1kC3ydix2giEQRNfw0Pol2bcStyPjOZP6/edit?usp=sharing&ouid=116893509660162873554&rtpof=true&sd=true" target="_blank" class="btn">Download Resume</a> -->
+        <!-- <a href="https://drive.google.com/uc?export=download&id=1kC3ydix2giEQRNfw0Pol2bcStyPjOZP6" target="_blank" download class="btn">
+          Download Resume
+        </a> -->
+        <a href=" https://drive.google.com/file/d/1LcZGKUFwjbVN6X3kRDyfj_ABp33DbMN0/view?usp=sharing" target="_blank" download class="btn">
+          Download Resume 
+        </a>
+
         </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Home -->
-    <section>
-        <div class="content-section" id="home">
-            <div class="home-container">
-                <img src="Demo_11.jpg" alt="Profile Picture">
-                <p class="par">Hi! I'm <span>Sakani</span>, a third year engineering student passionate about technology, movies, and learning new skills.
-                On this website, you'll find my projects, skills, and a little bit about my journey in the world of tech.</p>
-            </div>
-        </div>
+  <!-- About -->
+  <section id="about" class="section">
+    <div>
+        <h2>About Me</h2>
+        <p> 
+            Computer Science student with strong curiosity for technology and problem-solving. I enjoy exploring new ideas, learning by doing, and working independently on projects. While I’m still building confidence in communication and consistency, I bring persistence, creativity, and a willingness to grow. Looking for opportunities to apply technical knowledge, gain hands-on experience, and continue improving both technical and personal skills. I enjoy coding, exploring cybersecurity, and building small projects. Outside tech, I love movies, reading occasionally, and spending time with family.
+        </p>
+    </div>
+    <br>
+    <div>
+        <h3>Education</h3>
+        <table>
+        <tr>
+            <th>Examination</th>
+            <th>Board/University</th>
+            <th>Year of Passing</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>10 <sup>th</sup></td>
+            <td>Meghalaya Board Of School Education</td>
+            <td>2020</td>
+            <td>67%</td>
+        </tr>
+        <tr>
+            <td>12 <sup>th</sup></td>
+            <td>Meghalaya Board Of School Education</td>
+            <td>2023</td>
+            <td>58.2%</td>
+        </tr>
+        <tr>
+            <td>B.Tech CSE (CTIS)</td>
+            <td>Assam Down Town University</td>
+            <td>Ongoing</td>
+            <td>-</td>
+        </tr>
+        </table>
+    </div>
+    <br> 
+  </section>
 
-        <!-- About -->
-        <div class="content-section" id="about">
-            <p class="par">Hello! My name is <span>Sakanipaia Lyngdoh</span>, from Jowai, Meghalaya. Currently studying Computer Science and Engineering at
-                 Assam Down Town University. I love exploring new technologies, solving problems through coding, and building small projects.<br>
-                 Besides tech, I enjoy movies, occasional reading, and spending quality time with my family.<br>
-                 My current goal is to develop strong programming and cybersecurity skills, and to grow personally and professionally.</p>
-            <!-- Resume Button -->
-            <div class="resume-btn">
-            <a href="#" download>
-                <button>Download Resume</button>
-            </a>
-            </div>
-        </div>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>HTML (Basic structure, forms, CSS integration)</li>
+            <li>SQL (Query optimization, basic CRUD operations)</li>
+            <li>C (Basic programming, arrays, pointers)</li>
+            <li>Python (Basic data structure, loops, functions)</li>
+        </ul>
+      </div>
+      <br>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Curiosity & Willingness to learn</li>
+          <li>Persistence</li>
+          <li>Creativity</li>
+          <li>Self-awareness</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <!-- Skills -->
-        <div class="content-section" id="skills">
-            <p class="par"><span><u>Technical Skills</u></span></p>
-                <ul>
-                    <li>Basic C</li>
-                    <li>SQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                </ul>
-            <p class="par"><span><u>Soft Skills</u></span></p>
-                <ul>
-                    <li>Curiosity and Willingness to lear</li>
-                    <li>Persistence</li>
-                    <li>Independence</li>
-                    <li>Creativity</li>
-                    <li>Self-awareness</li>
-                </ul>
-        </div>
+  <!-- Certificates -->
+  <section id="certificates" class="section">
+    <h2>Certificates</h2>
+    <ul class="cert-list">
+      <li>   
+        <strong>Full Stack Web Development</strong> 
+        <a href="https://drive.google.com/file/d/18axsU5LES9jIcVolRHboHXIFgLifO1OW/view?usp=sharing" target="_blank" class="view-btn">View</a>
+      </li>
+      <li>   
+        <strong>Data Science for Engineers</strong> 
+        <a href="https://drive.google.com/file/d/116zQdW9B7JBOwh35fQgFwEq4QvLO9Src/view?usp=sharing" target="_blank" class="view-btn">View</a>
+      </li>
+      <li>   
+        <strong>Foundation of Cloud IoT Edge ML</strong> 
+        <a href="https://drive.google.com/file/d/1KBd1-6Lg_0Sscj3GxrYXhQz4hs7XK5ZS/view?usp=sharing" target="_blank" class="view-btn">View</a>
+      </li>
+      <li>   
+      <strong>Google Cloud & Generative AI Foundation</strong> 
+      <a href="https://drive.google.com/file/d/1HgWjNkQxvXsyx0wPFhA8hcRsRbttG_yf/view?usp=sharing" target="_blank" class="view-btn">View</a>
+    </li>
+    </ul>
+  </section>
 
-        <!-- Projects -->
-        <div class="content-section" id="projects">
-            <p class="par">Some of the Projects I've worked on include:</p>
-                <ul>
-                    <li>Basic Web Pages using HTML and CSS</li>
-                    <li>Exploring simple database queries with SQL</li>
-                    <li>Campaign Management App</li>
-                    <li>Android Penetration Testing</li>
-                    <li>Phishing Campaign Manager</li>
-                </ul>
-        </div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Web Pages (HTML & CSS)</h4>
+        <p>Built a fully functional personal website using HTML, CSS, and JavaScript, focusing on clean layouts, responsive design, interactive elements and highlighting strong front-end development and design skills.</p>
+      </div>
+      <div class="project-card">
+        <h4>Phishing Awareness Simulation</h4>
+        <p>Developed a Laravel-based phishing awareness platform with email campaigns, credential capture, and redirection to train users in identifying phishing attacks safely.</p>
+      </div>
+      <div class="project-card">
+        <h4>Android App Pentesting</h4>
+        <p>Set up a mobile pentesting lab and analyzed the InsecureBankv2 app using tools like Burp Suite, Frida, and MobSF to identify OWASP Mobile Top 5 vulnerabilities and recommend mitigations.</p>
+      </div>
+      <div class="project-card">
+        <h4>Digital Forensics (Autopsy)</h4>
+        <p>Performed forensic investigations on disk images using Autopsy and TryHackMe challenges, recovering deleted files, browser history, and registry artifacts to extract digital evidence.</p>
+      </div>
+      <div class="project-card">
+        <h4>SQL Practice</h4>
+        <p>Explored fundamental database concepts by writing and executing basic SQL queries to manage, retrieve, and analyze data from relational tables.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Contact -->
-        <div class="content-section" id="contact">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/sakanipaia-lyngdoh-56aabb297"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://www.hackerrank.com/profile/lyngdohsakanipa1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank" style="width: 70px; height: 70px;">
-                </a>                
-                <a href="https://github.com/Sakanipaia"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="mailto:sakanipaia24@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-            </div>
-        </div>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contacts</h2>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/sakanipaia-lyngdoh-56aabb297"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://www.hackerrank.com/profile/lyngdohsakanipa1"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank"></a>
+      <a href="https://github.com/Sakanipaia"><ion-icon name="logo-github"></ion-icon></a>
+      <a href="mailto:sakanipaia24@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/share/1Bsi14DG4Y/"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="https://www.instagram.com/lyngdoh__sakani"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://x.com/Saka_Lyngz"><ion-icon name="logo-twitter"></ion-icon></a>
+    </div>
+  </section>
 
-        <!-- Social -->
-        <div class="content-section" id="social">
-            <div class="icons">
-                <a href="https://www.facebook.com/share/1Bsi14DG4Y/"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://www.instagram.com/lyngdoh__sakani"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://x.com/Saka_Lyngz"><ion-icon name="logo-twitter"></ion-icon></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div >
-           <p class="footer-text">@2025 Sakani Lyngdoh | Thank you for visiting!</p> 
-        </div>
-    </footer>
-
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>@2025 Sakanipaia Lyngdoh | Thank you for visiting!</p>
+  </footer>
 </body>
 </html>
