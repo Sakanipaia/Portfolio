@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakani's Portfolio</title>
+  <link rel="shortcut icon" href="Demo_8.jpg" type="image/jpg">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
 </head>
@@ -11,6 +12,8 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Sakani</div>
+    <!-- <div class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></div> -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul>
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -22,7 +25,7 @@
   </nav>
 
   <!-- Home -->
-  <section id="home" class="section home">
+  <section id="home" class="section home content-section">
     <div class="home-container">
       <img src="Demo_11.jpg" alt="Profile Picture">
       <div class="intro">
@@ -43,7 +46,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section">
+  <section id="about" class="section content-section">
     <div>
         <h2>About Me</h2>
         <p> 
@@ -84,7 +87,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section">
+  <section id="skills" class="section content-section">
     <h2>Skills</h2>
     <div class="skills-container">
       <div>
@@ -110,7 +113,7 @@
   </section>
 
   <!-- Certificates -->
-  <section id="certificates" class="section">
+  <section id="certificates" class="section content-section">
     <h2>Certificates</h2>
     <ul class="cert-list">
       <li>   
@@ -133,7 +136,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section">
+  <section id="projects" class="section content-section">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
@@ -160,7 +163,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section content-section">
     <h2>Contacts</h2>
     <div class="icons">
       <a href="https://www.linkedin.com/in/sakanipaia-lyngdoh-56aabb297"><ion-icon name="logo-linkedin"></ion-icon></a>

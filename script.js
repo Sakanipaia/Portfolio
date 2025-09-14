@@ -14,17 +14,25 @@ function showSection(id) {
     document.getElementById(id).style.display = "block";
 
     // Highlight active navbar link
-    document.querySelectorAll('.menu ul li a').forEach(link => {
+    document.querySelectorAll('.navbar ul li a').forEach(link => {
         link.classList.remove("active");
     });
-    document.querySelector(`.menu ul li a[href="#${id}"]`).classList.add("active");
+    let activeLink = document.querySelector(`.navbar ul li a[href="#${id}"]`);
+    if (activeLink) {
+        activeLink.classList.add("active");
+    }
 }
 
-// Attach click event to menu links
-document.querySelectorAll('.menu ul li a').forEach(link => {
+// Attach click event to navbar links
+document.querySelectorAll('.navbar ul li a').forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault(); // Stop default jump
         let sectionId = this.getAttribute("href").substring(1); // remove #
         showSection(sectionId);
     });
 });
+
+// JS toggle function
+function toggleMenu() {
+  document.querySelector(".navbar ul").classList.toggle("show");
+}

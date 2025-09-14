@@ -30,25 +30,37 @@ h1, h2, h3 {
   top: 0;
   z-index: 1000;
 }
+
 .navbar .logo {
   font-size: 22px;
   font-weight: bold;
   color: #64ffda;
 }
+
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin-left: auto;  /* pushes menu to the right */
 }
+
 .navbar ul li a {
   color: #ccd6f6;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
 }
+
 .navbar ul li a:hover,
 .navbar ul li a.active {
   color: #64ffda;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
 
 /* Sections */
@@ -232,4 +244,28 @@ footer {
   background: #112240;
   color: #8892b0;
   font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #0a192f;
+    width: 200px;
+    display: none;
+    padding: 20px 0;
+    border-radius: 8px;
+    gap: 15px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
