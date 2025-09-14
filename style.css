@@ -254,18 +254,20 @@ footer {
     top: 60px;
     right: 20px;
     background: #0a192f;
-    width: 200px;
-    display: none;
+    width: 220px;
+    display: none;  /* hidden until toggled */
     padding: 20px 0;
     border-radius: 8px;
     gap: 15px;
+    transition: all 0.3s ease-in-out;  /* smooth effect */
   }
 
   .navbar ul.show {
-    display: flex;
+    display: flex;  /* visible when .show class is added */
   }
 
   .menu-toggle {
-    display: block;
+    display: block;  /* ☰ icon shows only on mobile */
+    cursor: pointer;
   }
 }
