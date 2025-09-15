@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakani's Portfolio</title>
-  <link rel="shortcut icon" href="Demo_8.jpg" type="image/jpg">
+  <link rel="shortcut icon" href="bg.jpg" type="image/jpg">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
   <nav class="navbar">
     <div class="logo">Sakani</div>
     <!-- <div class="menu-toggle"><ion-icon name="menu-outline"></ion-icon></div> -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ </div>
     <ul>
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -27,21 +28,24 @@
   <!-- Home -->
   <section id="home" class="section home content-section">
     <div class="home-container">
-      <img src="Demo_11.jpg" alt="Profile Picture">
       <div class="intro">
-        <h1>Hi, I'm <span>Sakanipaia Lyngdoh </span>from Jowai, Meghalaya.</h1>
-        <h3><b>Explore my work and journey here.</b></h3>
+        <h5>Hello! I'm </h5>
+        <h1><span class="highlight">Sakanipaia Lyngdoh </span> </h1>
+        <h5>Web Developer.</h5>
+        <br>
+        <h3><span class="highlight">Explore my work and journey here.</span></h3>
 
         <!-- Resume Button here -->
         <!-- <a href="https://docs.google.com/document/d/1kC3ydix2giEQRNfw0Pol2bcStyPjOZP6/edit?usp=sharing&ouid=116893509660162873554&rtpof=true&sd=true" target="_blank" class="btn">Download Resume</a> -->
         <!-- <a href="https://drive.google.com/uc?export=download&id=1kC3ydix2giEQRNfw0Pol2bcStyPjOZP6" target="_blank" download class="btn">
           Download Resume
         </a> -->
+        <br>
         <a href=" https://drive.google.com/file/d/1LcZGKUFwjbVN6X3kRDyfj_ABp33DbMN0/view?usp=sharing" target="_blank" download class="btn">
           Download Resume 
         </a>
-
         </div>
+        <img src="profile.jpg" alt="Profile Picture">
     </div>
   </section>
 
@@ -84,6 +88,49 @@
         </table>
     </div>
     <br> 
+    <!-- Experience -->
+    <section id="experience" class="section content-section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Internship – Full Stack Web Development</h3>
+          <span class="timeline-date">Business Web Solutions | June 02, 2025 - July 02, 2025</span>
+          <ul>
+            <li>Completed internship covering front-end and back-end development.</li>
+            <li>Gained hands-on experience with HTML, CSS, JavaScript, jQuery, Bootstrap, React.js, Python, Django.</li>
+            <li>Built responsive web pages and dynamic features using modern frameworks.</li>
+            <li>Worked on structured projects and successfully completed all assigned tasks.</li>
+            <li>Performance rated as more than satisfactory throughout the internship.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Internship – Cybersecurity</h3>
+          <span class="timeline-date">1Stop | Jul 2025 - Sep 2025</span>
+          <ul>
+            <li>Trained in cybersecurity fundamentals, threat analysis, penetration testing, and digital forensics.</li>
+            <li>Developed projects such as:</li>
+            <ul class="nested-list">
+              <li>Phishing Awareness Simulation – simulated phishing campaigns to raise security awareness.</li>
+              <li>Android App Penetration Testing – analyzed vulnerable apps using OWASP Top 5 testing.</li>
+              <li>Digital Forensic Analysis with Autopsy – extracted artifacts and investigated disk images</li>
+            </ul>
+            <li>Delivered reports with findings, remediation strategies, and recommendations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <!-- <section id="achievements" class="section content-section">
+      <h2>Achievements</h2>
+      <ul class="achievement-list">
+        <li>Completed <b>Full Stack Web Development</b> training.</li>
+        <li>Earned <b>Google Cloud & Generative AI</b> certification.</li>
+        <li>Built personal portfolio website with HTML, CSS, and JS.</li>
+        <li>Explored SQL queries for database management and analysis.</li>
+      </ul>
+    </section> -->
   </section>
 
   <!-- Skills -->
@@ -119,6 +166,10 @@
       <li>   
         <strong>Full Stack Web Development</strong> 
         <a href="https://drive.google.com/file/d/18axsU5LES9jIcVolRHboHXIFgLifO1OW/view?usp=sharing" target="_blank" class="view-btn">View</a>
+      </li>
+      <li>   
+        <strong>Cybersecurity</strong> 
+        <a href="https://drive.google.com/file/d/1PjDSNdRQlQdVTHMSqYOChZlj541llqSy/view?usp=sharing" target="_blank" class="view-btn">View</a>
       </li>
       <li>   
         <strong>Data Science for Engineers</strong> 
@@ -164,26 +215,52 @@
 
   <!-- Contact -->
   <section id="contact" class="section content-section">
-    <h2>Contacts</h2>
+    <h2>Contact Me</h2>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Or Connect With Me</h3>
     <div class="icons">
       <a href="https://www.linkedin.com/in/sakanipaia-lyngdoh-56aabb297" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
       <a href="https://www.hackerrank.com/profile/lyngdohsakanipa1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank"></a>
       <a href="https://github.com/Sakanipaia" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-      <a href="mailto:sakanipaia24@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+      <a href="mailto:sakanipaia24@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
     </div>
-
-    <h2>Socials</h2>
     <div class="icons">
       <a href="https://www.facebook.com/share/1Bsi14DG4Y/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="https://www.instagram.com/l__saka?igsh=anc0aWp0YnpjMWNp" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://x.com/Saka_Lyngz" target="_blank"><ion-icon name="logo-twitter" target="_blank"></ion-icon></a>
+      <a href="https://x.com/Saka_Lyngz" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
     </div>
   </section>
+  <!-- Floating Contact Button -->
+  <button id="contactPopupBtn">Mail?✉</button>
+
+  <!-- Contact Popup Modal -->
+  <div id="contactPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Contact Me</h2>
+      <form class="popup-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
     <p>@2025 Sakanipaia Lyngdoh | Thank you for visiting!</p>
   </footer>
+
+  <button id="backToTop" title="Go to top">Top↑</button>
 
   <script src="script.js"></script>
 
