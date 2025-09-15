@@ -196,6 +196,16 @@ th {
 tr:nth-child(even) {
   background: #1a2c47;
 }
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  min-width: 500px; /* prevents breaking */
+}
+
 
 /* Timeline (Experience Section) */
 .timeline {
